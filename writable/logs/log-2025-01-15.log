@@ -1,0 +1,181 @@
+CRITICAL - 2025-01-15 11:03:09 --> ParseError: syntax error, unexpected identifier "title", expecting "," or ";"
+[Method: GET, Route: /]
+in APPPATH\Views\pagination\tailwind_full.php on line 18.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render('App\\Views\\pagination\\tailwind_full')
+ 3 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'tailwind_full')
+ 4 APPPATH\Views\featured-cars.php(33): CodeIgniter\Pager\Pager->links('default', 'tailwind_full')
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 8 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:53:27 --> ErrorException: Undefined variable $carroModel
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Controllers\Pesquisa_carro.php on line 14.
+ 1 APPPATH\Controllers\Pesquisa_carro.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Pesquisa_carro.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:54:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search-cars.php"
+[Method: GET, Route: pesquisa_carro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 3 APPPATH\Controllers\Pesquisa_carro.php(16): view('search-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:54:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search-cars.php"
+[Method: GET, Route: pesquisa_carro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 3 APPPATH\Controllers\Pesquisa_carro.php(16): view('search-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:54:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search-cars.php"
+[Method: GET, Route: pesquisa_carro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 3 APPPATH\Controllers\Pesquisa_carro.php(16): view('search-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:57:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search-cars.php"
+[Method: GET, Route: pesquisa_carro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 3 APPPATH\Controllers\Pesquisa_carro.php(13): view('search-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:57:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search-cars.php"
+[Method: GET, Route: pesquisa_carro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 3 APPPATH\Controllers\Pesquisa_carro.php(13): view('search-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:10:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+[Method: GET, Route: pesquisa_carro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\Pesquisa_carro.php(11): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:37:27 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 79.
+ 1 APPPATH\Views\search-cars.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 79)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:38:33 --> ErrorException: Undefined variable $carroModel
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Controllers\Pesquisa_carro.php on line 12.
+ 1 APPPATH\Controllers\Pesquisa_carro.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Pesquisa_carro.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:38:33 --> ErrorException: Undefined variable $carroModel
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Controllers\Pesquisa_carro.php on line 12.
+ 1 APPPATH\Controllers\Pesquisa_carro.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Pesquisa_carro.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:38:34 --> ErrorException: Undefined variable $carroModel
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Controllers\Pesquisa_carro.php on line 12.
+ 1 APPPATH\Controllers\Pesquisa_carro.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Pesquisa_carro.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:38:50 --> ErrorException: Attempt to read property "pager" on string
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Controllers\Pesquisa_carro.php on line 12.
+ 1 APPPATH\Controllers\Pesquisa_carro.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "pager" on string', 'C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Pesquisa_carro.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:39:08 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 79.
+ 1 APPPATH\Views\search-cars.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 79)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 15:39:14 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 79.
+ 1 APPPATH\Views\search-cars.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 79)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

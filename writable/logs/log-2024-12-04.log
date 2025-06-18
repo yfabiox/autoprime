@@ -1,0 +1,11 @@
+CRITICAL - 2024-12-04 09:07:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "C:\xampp\htdocs\codeex4\app\Config/../Views\template_parser.php"
+[Method: GET, Route: parser]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\Parser.php(134): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('C:\\xampp\\htdocs\\codeex4\\app\\Config/../Views\\template_parser.php')
+ 2 APPPATH\Controllers\Parser_.php(30): CodeIgniter\View\Parser->render('template_parser.php')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Parser_->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Parser_))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

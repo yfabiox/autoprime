@@ -1,0 +1,22 @@
+CRITICAL - 2024-11-29 09:21:04 --> TypeError: random_int(): Argument #2 ($max) must be of type int, float given
+[Method: GET, Route: extra]
+in SYSTEMPATH\Helpers\text_helper.php on line 571.
+ 1 SYSTEMPATH\Helpers\text_helper.php(571): random_int(0, 1.0E+20)
+ 2 APPPATH\Controllers\Extra.php(72): random_string('numeric', 20)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Extra->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extra))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-29 09:23:38 --> TypeError: random_int(): Argument #2 ($max) must be of type int, float given
+[Method: GET, Route: extra]
+in SYSTEMPATH\Helpers\text_helper.php on line 571.
+ 1 SYSTEMPATH\Helpers\text_helper.php(571): random_int(0, 1.0E+19)
+ 2 APPPATH\Controllers\Extra.php(76): random_string('numeric', 19)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Extra->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extra))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

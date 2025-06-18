@@ -1,0 +1,35 @@
+CRITICAL - 2024-12-09 08:41:51 --> TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, CodeIgniter\Pager\Pager given
+[Method: GET, Route: mus4]
+in VENDORPATH\mustache\mustache\src\Mustache\Cache\NoopCache.php(45) : eval()'d code on line 51.
+ 1 VENDORPATH\mustache\mustache\src\Mustache\Cache\NoopCache.php(45) : eval()'d code(51): htmlspecialchars(Object(CodeIgniter\Pager\Pager), 2, 'UTF-8')
+ 2 VENDORPATH\mustache\mustache\src\Mustache\Template.php(66): __Mustache_b6059a07286edaccb64fc91635a102cd->renderInternal(Object(Mustache_Context))
+ 3 VENDORPATH\mustache\mustache\src\Mustache\Engine.php(236): Mustache_Template->render([...])
+ 4 APPPATH\Controllers\Mustache_.php(98): Mustache_Engine->render('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mustache_->index4()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mustache_))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-09 08:43:16 --> Error: Object of class CodeIgniter\Pager\Pager could not be converted to string
+[Method: GET, Route: mus4]
+in VENDORPATH\mustache\mustache\src\Mustache\Cache\NoopCache.php(45) : eval()'d code on line 51.
+ 1 VENDORPATH\mustache\mustache\src\Mustache\Template.php(66): __Mustache_9b671abd5b79f5e3d9c02bfa172ba5a3->renderInternal(Object(Mustache_Context))
+ 2 VENDORPATH\mustache\mustache\src\Mustache\Engine.php(236): Mustache_Template->render([...])
+ 3 APPPATH\Controllers\Mustache_.php(102): Mustache_Engine->render('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mustache_->index4()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mustache_))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-09 09:32:19 --> ErrorException: Undefined variable $data
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\codeex4\\app\\Controllers\\Login.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

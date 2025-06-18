@@ -1,0 +1,154 @@
+USE autoprime;
+
+/*CREATE TABLE carros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(100) NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    ano INT NOT NULL,
+    cor VARCHAR(50) NOT NULL,
+    quilometragem INT NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    descricao TEXT,
+    imagem_url VARCHAR(255), -- Caminho da imagem do carro
+    data_adicao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);*/
+
+/*CREATE TABLE carros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(100) NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    ano INT NOT NULL,
+    cor VARCHAR(50) NOT NULL,
+    quilometragem INT NOT NULL,
+    preco INT NOT NULL,
+
+    descricao TEXT,
+    imagem_url VARCHAR(255), -- Caminho da imagem do carro
+    data_adicao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    versao VARCHAR(100),       -- Versão do carro
+    combustivel VARCHAR(50),   -- Tipo de combustível
+    ndeportas INT,             -- Número de portas
+    lotacao INT,               -- Capacidade de lotação
+    ndemudancas INT,           -- Número de mudanças do carro
+    tipodecaixaa VARCHAR(50),  -- Tipo de caixa (manual ou automática)
+    tracao VARCHAR(50),        -- Tipo de tração (ex: AWD, FWD, RWD)
+    `2chave` VARCHAR(3),       -- Se o carro tem 2 chaves (Sim ou Não)
+    segmento VARCHAR(50),      -- Segmento do carro (ex: SUV, sedan)
+    potencia INT,              -- Potência do carro (em cavalos)
+    cilindrada INT             -- Cilindrada do motor (em cm³)
+);*/
+
+
+/*CREATE TABLE utilizadores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL, -- Senha criptografada
+    tipo ENUM('cliente', 'admin') DEFAULT 'cliente',
+    data_registo TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);*/
+
+/*CREATE TABLE carros_favoritos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    utilizador_id INT,
+    carro_id INT,
+    FOREIGN KEY (utilizador_id) REFERENCES utilizadores(id),
+    FOREIGN KEY (carro_id) REFERENCES carros(id)
+);*/
+
+/*CREATE TABLE menu_admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    link VARCHAR(255) NOT NULL
+);*/
+
+/*CREATE TABLE registos_login (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    utilizador_id INT,
+    ip_address VARCHAR(100),
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (utilizador_id) REFERENCES utilizadores(id)
+);*/
+
+/*INSERT INTO carros (marca, modelo, ano, cor, quilometragem, preco, descricao, imagem_url) 
+VALUES
+('BMW', 'M2', 2020, 'Preto', 85000, 85000.00, 'Carro desportivo de alta performance, ideal para quem procura velocidade e estilo.', 'm2.webp'),
+('Audi', 'R8', 2020, 'Branco', 50000, 90000.00, 'Audi R8, um verdadeiro ícone do design e desempenho automóvel.', 'r8.webp'),
+('Audi', 'A4 Avant', 2020, 'Cinza', 25000, 40000.00, 'Espaço, conforto e desempenho. Perfeito para viagens de longa distância.', 'a4avant.webp'),
+('Aston Martin', 'DB11', 2020, 'Azul', 25000, 80000.00, 'Uma obra-prima da engenharia e design britânico, para um desempenho superior.', 'aston.webp'),
+('BMW', 'M3', 2020, 'Vermelho', 25000, 80000.00, 'Desempenho e luxo juntos em um só carro.', 'm3.webp'),
+('Porsche', 'Cayenne', 2020, 'Preto', 25000, 60000.00, 'SUV de luxo, ideal para quem deseja uma experiência única de condução.', 'cayene.webp'),
+('Mercedes', 'GLE', 2019, 'Prata', 35000, 60000.00, 'Um SUV espaçoso e elegante, com muita tecnologia e conforto.', 'gle.webp'),
+('Peugeot', '3008', 2022, 'Azul', 10000, 25000.00, 'Peugeot 3008, um SUV compacto com design moderno e tecnologias avançadas.', '3008.webp');*/
+
+/*INSERT INTO carros (marca, modelo, ano, cor, quilometragem, preco, descricao, imagem_url, versao, combustivel, ndeportas, lotacao, ndemudancas, tipodecaixaa, tracao, `2chave`, segmento, potencia, cilindrada) 
+VALUES
+('BMW', 'M2', 2020, 'Preto', 85000, 85000.00, 'Carro desportivo de alta performance, ideal para quem procura velocidade e estilo.', 'm2.webp', 'M Sport', 'Gasolina', 2, 4, 6, 'Automática', 'Traseira', 'Sim', 'Desportivo', 410, 2993),
+('Audi', 'R8', 2020, 'Branco', 50000, 90000.00, 'Audi R8, um verdadeiro ícone do design e desempenho automóvel.', 'r8.webp', 'V10', 'Gasolina', 2, 2, 7, 'Automática', 'Traseira', 'Sim', 'Desportivo', 610, 5200),
+('Audi', 'A4 Avant', 2020, 'Cinza', 25000, 40000.00, 'Espaço, conforto e desempenho. Perfeito para viagens de longa distância.', 'a4avant.webp', 'S Line', 'Diesel', 5, 5, 6, 'Manual', 'Dianteira', 'Sim', 'Sedan', 190, 1968),
+('Aston Martin', 'DB11', 2020, 'Azul', 25000, 80000.00, 'Uma obra-prima da engenharia e design britânico, para um desempenho superior.', 'aston.webp', 'V8', 'Gasolina', 2, 4, 8, 'Automática', 'Traseira', 'Sim', 'Desportivo', 503, 3998),
+('BMW', 'M3', 2020, 'Vermelho', 25000, 80000.00, 'Desempenho e luxo juntos em um só carro.', 'm3.webp', 'Competition', 'Gasolina', 4, 5, 6, 'Automática', 'Traseira', 'Sim', 'Sedan', 510, 2993),
+('Porsche', 'Cayenne', 2020, 'Preto', 25000, 60000.00, 'SUV de luxo, ideal para quem deseja uma experiência única de condução.', 'cayene.webp', 'Turbo', 'Gasolina', 5, 5, 8, 'Automática', 'Dianteira', 'Sim', 'SUV', 550, 4806),
+('Mercedes', 'GLE', 2019, 'Prata', 35000, 60000.00, 'Um SUV espaçoso e elegante, com muita tecnologia e conforto.', 'gle.webp', 'AMG', 'Diesel', 5, 5, 9, 'Automática', 'Dianteira', 'Sim', 'SUV', 400, 2925),
+('Peugeot', '3008', 2022, 'Azul', 10000, 25000.00, 'Peugeot 3008, um SUV compacto com design moderno e tecnologias avançadas.', '3008.webp', 'GT', 'Diesel', 5, 5, 6, 'Manual', 'Dianteira', 'Sim', 'SUV', 180, 1598);*/
+
+
+/*INSERT INTO utilizadores (nome, email, senha, tipo) 
+VALUES 
+('Carlos Silva', 'carlos.silva@email.com', 'senhaCriptografada1', 'cliente'),
+('Ana Ferreira', 'ana.ferreira@email.com', 'senhaCriptografada2', 'cliente'),
+('João Mendes', 'joao.mendes@email.com', 'senhaCriptografada3', 'admin'),
+('Maria Costa', 'maria.costa@email.com', 'senhaCriptografada4', 'cliente');*/
+
+/*INSERT INTO registos_login (utilizador_id, ip_address) 
+VALUES 
+(1, '192.168.0.1'),
+(2, '192.168.0.2'),
+(3, '192.168.0.3'),
+(4, '192.168.0.4');*/
+
+/*INSERT INTO carros_favoritos (utilizador_id, carro_id) 
+VALUES 
+(1, 2),  -- Carlos Silva adicionou o Audi R8 aos favoritos
+(2, 5),  -- Ana Ferreira adicionou o BMW M3 aos favoritos
+(3, 1),  -- João Mendes adicionou o BMW M2 aos favoritos
+(4, 8);  -- Maria Costa adicionou o Peugeot 3008 aos favoritos*/
+
+/*INSERT INTO menu_admin (nome, link) 
+VALUES 
+('Dashboard', '/admin/dashboard'),
+('Gestão de Carros', '/admin/carros'),
+('Gestão de Utilizadores', '/admin/utilizadores'),
+('Relatórios', '/admin/relatorios');*/
+
+/*CREATE TABLE carro_imagens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    carro_id INT NOT NULL,
+    imagem_url VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (carro_id) REFERENCES carros(id) ON DELETE CASCADE
+);*/
+
+/*CREATE TABLE `users` (
+  `user_id` INT(11) AUTO_INCREMENT PRIMARY KEY,
+  `user_name` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(255) NOT NULL
+);*/
+
+/*INSERT INTO users (user_name, email, password) 
+VALUES 
+('fabio', 'fabio@autoprime.pt', '$2y$10$Q5N9iO4yPOQGhRE9I9Fgepo5Fx1VgTmIhtsm7u64Vq2VJGe9GF6t6');*/
+
+/*ALTER TABLE carros
+ADD COLUMN preco_desconto INT DEFAULT NULL;*/
+
+/*ALTER TABLE carros
+ADD COLUMN estado VARCHAR(20) NOT NULL;*/
+
+
+
+
+
+

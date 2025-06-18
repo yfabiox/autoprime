@@ -1,0 +1,164 @@
+CRITICAL - 2025-01-16 14:06:42 --> ErrorException: Undefined variable $marca
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 3.
+ 1 APPPATH\Views\search-cars.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 14:06:42 --> ErrorException: Undefined variable $marca
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 3.
+ 1 APPPATH\Views\search-cars.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 14:08:50 --> ParseError: syntax error, unexpected token "class", expecting "function" or "const"
+[Method: GET, Route: carros/search]
+in APPPATH\Controllers\CarroController.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\CarroController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CarroController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CarroController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\CarroController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 14:16:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 4 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 14:16:20 --> [Caused by] ErrorException: Undefined variable $carros
+in APPPATH\Views\search-cars.php on line 2.
+ 1 APPPATH\Views\search-cars.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carros', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 14:16:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: pesquisa_carro]
+in APPPATH\Views\search-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 4 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 14:16:20 --> [Caused by] ErrorException: Undefined variable $carros
+in APPPATH\Views\search-cars.php on line 2.
+ 1 APPPATH\Views\search-cars.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carros', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\search-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search-cars', [], true)
+ 5 APPPATH\Controllers\Pesquisa_carro.php(14): view('search-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesquisa_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesquisa_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 15:07:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "carros/resultado_busca.php"
+[Method: GET, Route: carros/search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('carros/resultado_busca.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('carros/resultado_busca', [], true)
+ 3 APPPATH\Controllers\Carros_Search.php(23): view('carros/resultado_busca', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carros_Search->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carros_Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 15:08:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "searach-cars.php"
+[Method: GET, Route: carros/search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('searach-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('searach-cars', [], true)
+ 3 APPPATH\Controllers\Carros_Search.php(23): view('searach-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carros_Search->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carros_Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 15:08:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "searach-cars.php"
+[Method: GET, Route: carros/search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('searach-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('searach-cars', [], true)
+ 3 APPPATH\Controllers\Carros_Search.php(23): view('searach-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carros_Search->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carros_Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 15:08:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "searach-cars.php"
+[Method: GET, Route: carros/search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('searach-cars.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('searach-cars', [], true)
+ 3 APPPATH\Controllers\Carros_Search.php(23): view('searach-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carros_Search->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carros_Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 15:16:51 --> ParseError: Unclosed '{' on line 7
+[Method: GET, Route: carros/search]
+in APPPATH\Controllers\Carros_Search.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Carros_Search.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Carros_Search')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Carros_Search')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Carros_Search', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-16 15:17:04 --> ParseError: Unclosed '{' on line 7
+[Method: GET, Route: carros/search]
+in APPPATH\Controllers\Carros_Search.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Controllers\\Carros_Search.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Carros_Search')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Carros_Search')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Carros_Search', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

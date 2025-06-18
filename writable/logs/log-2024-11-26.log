@@ -1,0 +1,97 @@
+CRITICAL - 2024-11-26 08:42:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template_pages.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template_pages.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('template_pages', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('main_page', [], true)
+ 4 APPPATH\Controllers\Home.php(36): view('main_page', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-26 08:46:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "comuns/menu.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('comuns/menu.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('comuns/menu', null, true)
+ 3 APPPATH\Views\template_pages.php(10): CodeIgniter\View\View->include('comuns/menu')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\codeex4\\app\\Views\\template_pages.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('template_pages', [], true)
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('main_page', [], true)
+ 8 APPPATH\Controllers\Home.php(36): view('main_page', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-26 09:06:00 --> CodeIgniter\Router\Exceptions\RouterException: The route for "home" cannot be found.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('home')
+ 2 APPPATH\Views\comuns\menu.php(8): url_to('home')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\codeex4\\app\\Views\\comuns\\menu.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('comuns/menu', null, true)
+ 6 APPPATH\Views\template_pages.php(10): CodeIgniter\View\View->include('comuns/menu')
+ 7 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\codeex4\\app\\Views\\template_pages.php')
+ 8 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('template_pages', [], true)
+10 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('main_page', [], true)
+11 APPPATH\Controllers\Home.php(37): view('main_page', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-26 09:08:07 --> CodeIgniter\Router\Exceptions\RouterException: The route for "contatos" cannot be found.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('contatos')
+ 2 APPPATH\Views\comuns\menu.php(9): url_to('contatos')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\codeex4\\app\\Views\\comuns\\menu.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('comuns/menu', null, true)
+ 6 APPPATH\Views\template_pages.php(10): CodeIgniter\View\View->include('comuns/menu')
+ 7 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\codeex4\\app\\Views\\template_pages.php')
+ 8 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('template_pages', [], true)
+10 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('main_page', [], true)
+11 APPPATH\Controllers\Home.php(37): view('main_page', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-26 09:11:11 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cliente_add" cannot be found.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cliente_add')
+ 2 APPPATH\Views\main_page.php(4): url_to('cliente_add')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\codeex4\\app\\Views\\main_page.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('main_page', [], true)
+ 6 APPPATH\Controllers\Home.php(37): view('main_page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-26 09:31:19 --> ParseError: syntax error, unexpected single-quoted string "name", expecting "]"
+[Method: POST, Route: cliente]
+in APPPATH\Controllers\Cliente.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeex4\\app\\Controllers\\Cliente.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cliente')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cliente')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Cliente', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

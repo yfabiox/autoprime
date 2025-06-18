@@ -1,0 +1,1073 @@
+CRITICAL - 2025-01-14 08:57:53 --> ErrorException: Undefined variable $usarDaisyUI
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 1.
+ 1 APPPATH\Views\details-cars.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usarDaisyUI', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:23 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:23 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:24 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:28 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:29 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:29 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:32 --> ParseError: syntax error, unexpected identifier "href"
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:33 --> ParseError: syntax error, unexpected identifier "href"
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 2.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 08:58:39 --> ErrorException: Undefined variable $usarDaisyUI
+[Method: GET, Route: detalhe_carro]
+in APPPATH\Views\details-cars.php on line 1.
+ 1 APPPATH\Views\details-cars.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usarDaisyUI', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(15): view('details-cars')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:19:55 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Models\CarroModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Models\\CarroModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CarroModel')
+ 4 APPPATH\Controllers\Home.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CarroModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:20:15 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Models\CarroModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Models\\CarroModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CarroModel')
+ 4 APPPATH\Controllers\Home.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CarroModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:20:16 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Models\CarroModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Models\\CarroModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CarroModel')
+ 4 APPPATH\Controllers\Home.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CarroModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:20:17 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Models\CarroModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Models\\CarroModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CarroModel')
+ 4 APPPATH\Controllers\Home.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CarroModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:20:17 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Models\CarroModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\autoprime\\app\\Models\\CarroModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CarroModel')
+ 4 APPPATH\Controllers\Home.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CarroModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-14 09:26:06 --> [DEPRECATED] Creation of dynamic property CodeIgniter\Router\RouteCollection::$get is deprecated in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\autoprime\\app\\Config\\Routes.php')
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-14 09:26:07 --> [DEPRECATED] Creation of dynamic property CodeIgniter\Router\RouteCollection::$get is deprecated in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\autoprime\\app\\Config\\Routes.php')
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-14 09:26:08 --> [DEPRECATED] Creation of dynamic property CodeIgniter\Router\RouteCollection::$get is deprecated in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\autoprime\\app\\Config\\Routes.php')
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-14 09:26:10 --> [DEPRECATED] Creation of dynamic property CodeIgniter\Router\RouteCollection::$get is deprecated in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\autoprime\\app\\Config\\Routes.php')
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-14 09:26:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\Router\RouteCollection::$get is deprecated in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\autoprime\\app\\Config\\Routes.php')
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:28:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "detalhe_carro.php"
+[Method: GET, Route: detalhe_carro/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalhe_carro.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('detalhe_carro', [], true)
+ 3 APPPATH\Controllers\Carros.php(19): view('detalhe_carro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carros->detalhe_carro('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carros))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:28:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "detalhe_carro.php"
+[Method: GET, Route: detalhe_carro/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalhe_carro.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('detalhe_carro', [], true)
+ 3 APPPATH\Controllers\Carros.php(19): view('detalhe_carro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carros->detalhe_carro('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carros))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:31:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "detalhe_carro.php"
+[Method: GET, Route: detalhe_carro/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalhe_carro.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('detalhe_carro', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('detalhe_carro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:31:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "detalhe_carro.php"
+[Method: GET, Route: detalhe_carro/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalhe_carro.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('detalhe_carro', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('detalhe_carro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:31:34 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:31:36 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:04 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:05 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:06 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:14 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:33 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:34 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:35 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:47 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:48 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:48 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:48 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:55 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:32:56 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:33:05 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:33:05 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:33:06 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:33:06 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:33:07 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 09:39:58 --> CodeIgniter\Router\Exceptions\RouterException: Controller or its method is not found: Carros::detalhe_carro
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 491.
+ 1 SYSTEMPATH\Helpers\url_helper.php(491): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Carros', 'detalhe_carro')
+ 2 APPPATH\Views\featured-cars.php(19): url_to('Carros::detalhe_carro', '1')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\featured-cars.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('featured-cars', [], true)
+ 6 APPPATH\Controllers\Home.php(22): view('featured-cars', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-14 11:08:12 --> mysqli_sql_exception: Table 'autoprime.carros' doesn't exist in C:\xampp\htdocs\autoprime\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\autoprime\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\autoprime\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\autoprime\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\autoprime\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\autoprime\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\autoprime\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\autoprime\app\Controllers\Detalhe_carro.php(15): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\autoprime\system\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+#8 C:\xampp\htdocs\autoprime\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+#9 C:\xampp\htdocs\autoprime\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\autoprime\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\autoprime\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\autoprime\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-01-14 11:08:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'autoprime.carros' doesn't exist
+[Method: GET, Route: detalhe_carro/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = :carros.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '2')
+ 4 APPPATH\Controllers\Detalhe_carro.php(15): CodeIgniter\BaseModel->find('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:08:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'autoprime.carros' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = :carros.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '2')
+ 6 APPPATH\Controllers\Detalhe_carro.php(15): CodeIgniter\BaseModel->find('2')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:08:12 --> [Caused by] mysqli_sql_exception: Table 'autoprime.carros' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carros`
+WHERE `carros`.`id` = :carros.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH\Controllers\Detalhe_carro.php(15): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:40:14 --> ErrorException: Undefined array key "outra_imagem_url"
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 14.
+ 1 APPPATH\Views\details-cars.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "outra_imagem_url"', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:40:30 --> ErrorException: Undefined array key ""
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 14.
+ 1 APPPATH\Views\details-cars.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:40:48 --> Error: Call to undefined function number_to_currency()
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 21.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 4 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:40:49 --> Error: Call to undefined function number_to_currency()
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 21.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 4 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:41:10 --> Error: Call to undefined function number_to_currency()
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 21.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 4 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:41:11 --> Error: Call to undefined function number_to_currency()
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 21.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 4 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:43:28 --> ParseError: Unmatched ')'
+[Method: GET, Route: detalhe_carro/2]
+in APPPATH\Views\details-cars.php on line 21.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:45:42 --> InvalidArgumentException: Invalid escape context provided.
+[Method: GET, Route: detalhe_carro/1]
+in SYSTEMPATH\Common.php on line 434.
+ 1 APPPATH\Views\details-cars.php(41): esc('85000.00', 'eur')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:45:47 --> Error: Call to undefined function number_to_currency()
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 41.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 4 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:45:47 --> Error: Call to undefined function number_to_currency()
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 41.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 4 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:51:35 --> ErrorException: Undefined array key "preco "
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 41.
+ 1 APPPATH\Views\details-cars.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "preco "', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:55:37 --> ErrorException: Undefined array key "quilometros"
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 85.
+ 1 APPPATH\Views\details-cars.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quilometros"', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 85)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 11:59:01 --> ErrorException: Undefined array key "tipodecaixa"
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 103.
+ 1 APPPATH\Views\details-cars.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipodecaixa"', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 103)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:26:08 --> ErrorException: Undefined variable $car
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 7.
+ 1 APPPATH\Views\details-cars.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $car', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:28:19 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 218.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:28:20 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 218.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:28:32 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 218.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:28:32 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 218.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:28:43 --> ErrorException: Undefined variable $car
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 7.
+ 1 APPPATH\Views\details-cars.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $car', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(22): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:35:17 --> Error: Class "App\Controllers\CarroImagemModel" not found
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Controllers\Detalhe_carro.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:36:25 --> Error: Class "App\Controllers\CarroImagemModel" not found
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Controllers\Detalhe_carro.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:36:38 --> Error: Class "App\Controllers\CarroImagemModel" not found
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Controllers\Detalhe_carro.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:49:19 --> ErrorException: Undefined variable $car
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 8.
+ 1 APPPATH\Views\details-cars.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $car', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(27): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:57:47 --> ErrorException: Undefined variable $imagem
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 7.
+ 1 APPPATH\Views\details-cars.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imagem', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(27): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:57:47 --> ErrorException: Undefined variable $imagem
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 7.
+ 1 APPPATH\Views\details-cars.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imagem', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(27): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:58:45 --> ErrorException: Undefined variable $iga
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 7.
+ 1 APPPATH\Views\details-cars.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iga', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(27): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 12:58:45 --> ErrorException: Undefined variable $iga
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 7.
+ 1 APPPATH\Views\details-cars.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iga', 'C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\autoprime\\app\\Views\\details-cars.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 5 APPPATH\Controllers\Detalhe_carro.php(27): view('details-cars', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 13:40:04 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 235.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(28): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 13:40:17 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 235.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(28): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 13:40:17 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 235.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(28): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 13:40:18 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 235.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(28): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-14 13:40:18 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detalhe_carro/1]
+in APPPATH\Views\details-cars.php on line 235.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('details-cars', [], true)
+ 3 APPPATH\Controllers\Detalhe_carro.php(28): view('details-cars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detalhe_carro->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalhe_carro))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

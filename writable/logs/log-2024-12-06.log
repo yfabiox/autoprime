@@ -1,0 +1,10 @@
+CRITICAL - 2024-12-06 09:20:47 --> ErrorException: Undefined variable $m
+[Method: GET, Route: mus1]
+in APPPATH\Controllers\Mustache_.php on line 47.
+ 1 APPPATH\Controllers\Mustache_.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $m', 'C:\\xampp\\htdocs\\codeex4\\app\\Controllers\\Mustache_.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mustache_->index1()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mustache_))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
