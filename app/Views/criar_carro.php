@@ -10,7 +10,7 @@
                 <p class="text-gray-400 mt-1">Crie os detalhes do veículo</p>
             </div>
         </div>
-        <a href="<?= url_to('AdminDashboard') ?>"
+        <a href="<?= url_to('Cars_Dashboard') ?>"
             class="inline-flex items-center justify-center px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white font-medium rounded-lg shadow transition-all">
             <iconify-icon icon="lucide:arrow-left" class="mr-2"></iconify-icon>
             Voltar
@@ -97,7 +97,7 @@
 
             <!-- Botões -->
             <div class="mt-8 flex flex-col sm:flex-row justify-end gap-3">
-                <a href="<?= url_to('AdminDashboard') ?>"
+                <a href="<?= url_to('Cars_Dashboard') ?>"
                     class="px-6 py-3 border border-gray-600 text-gray-300 hover:bg-gray-700 rounded-lg text-center">
                     Cancelar
                 </a>

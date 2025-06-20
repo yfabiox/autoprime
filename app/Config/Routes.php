@@ -27,11 +27,13 @@ $routes->post('/login_check', 'Login::checkLogin', ['as' => 'login_check']);
 $routes->get('/logout', 'Login::logout');
 $routes->get('/noaccess', 'Login::logout');
 
+$routes->get('dashboard_admin', 'AdminDashboard::index');
+
 
 //CRUD
-$routes->get('/dashboard', 'AdminDashboard::index');
-$routes->get('/dashboard/create', 'AdminDashboard::create');
-$routes->post('/dashboard/store', 'AdminDashboard::store', ['as' => 'store_admin']);
-$routes->get('/dashboard/edit/(:num)', 'AdminDashboard::edit/$1');
-$routes->post('/dashboard/update/(:num)', 'AdminDashboard::update/$1');
-$routes->get('/dashboard/delete/(:num)', 'AdminDashboard::delete/$1');
+$routes->get('/dashboard', 'Cars_Dashboard::index');
+$routes->get('/dashboard/create', 'Cars_Dashboard::create');
+$routes->post('/dashboard/store', 'Cars_Dashboard::store', ['as' => 'store_admin']);
+$routes->get('/dashboard/edit/(:num)', 'Cars_Dashboard::edit/$1');
+$routes->post('/dashboard/update/(:num)', 'Cars_Dashboard::update/$1');
+$routes->get('/dashboard/delete/(:num)', 'Cars_Dashboard::delete/$1');
