@@ -35,7 +35,7 @@
                 Veiculos
                 <span
                     class="absolute left-0 bottom-0 w-full h-0.5 bg-red-400 transition-all duration-300
-                    <?= (strpos($currentUrl, 'dashboard') !== false) ? 'opacity-100' : 'opacity-0 group-hover:opacity-100' ?>"></span>
+                <?= ($uri->getSegment(1) === 'dashboard') ? 'opacity-100' : 'opacity-0 group-hover:opacity-100' ?>"></span>
             </a>
 
             <a href="#"
@@ -57,7 +57,7 @@
                 Dashboard
                 <span
                     class="absolute left-0 bottom-0 w-full h-0.5 bg-red-400 transition-all duration-300
-                    <?= (strpos($currentUrl, 'dashboard_admin') !== false) ? 'opacity-100' : 'opacity-0 group-hover:opacity-100' ?>"></span>
+                <?= ($uri->getSegment(1) === 'dashboard_admin') ? 'opacity-100' : 'opacity-0 group-hover:opacity-100' ?>"></span>
             </a>
             <?php if (session()->get('logged_in')): ?>
             <div class="relative inline-block text-left">

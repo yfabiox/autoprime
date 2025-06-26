@@ -13,7 +13,7 @@ class CarroModel extends Model
     protected $allowedFields = [
         'marca', 'modelo', 'ano', 'cor', 'estado','quilometragem', 'preco','preco_desconto', 'descricao', 'imagem_url',
         'versao', 'combustivel', 'ndeportas', 'lotacao', 'ndemudancas', 'tipodecaixaa', 'tracao',
-        '2chave', 'segmento', 'potencia', 'cilindrada'
+        '2chave', 'segmento', 'potencia', 'cilindrada','data_cadastro','data_venda'
     ];
 
     public function getFiltros()
