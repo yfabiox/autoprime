@@ -78,16 +78,28 @@ class Cars_Dashboard extends BaseController
         }
 
         $this->carroModel->save([
-            'marca'         => $this->request->getPost('marca'),
-            'modelo'        => $this->request->getPost('modelo'),
-            'ano'           => $this->request->getPost('ano'),
-            'preco'         => $this->request->getPost('preco'),
-            'preco_desconto'=> $this->request->getPost('preco_desconto'),
-            'imagem_url'   => $nomeImagem,  // grava o nome do arquivo salvo
-            'quilometragem' => $this->request->getPost('quilometragem'),
-            'combustivel'   => $this->request->getPost('combustivel'),
-            'estado'       => $this->request->getPost('estado'),
-        ]);
+            'marca'           => $this->request->getPost('marca'),
+            'modelo'          => $this->request->getPost('modelo'),
+            'ano'             => $this->request->getPost('ano'),
+            'cor'             => $this->request->getPost('cor'),
+            'preco'           => $this->request->getPost('preco'),
+            'preco_desconto'  => $this->request->getPost('preco_desconto'),
+            'imagem_url'      => $nomeImagem, 
+            'quilometragem'   => $this->request->getPost('quilometragem'),
+            'combustivel'     => $this->request->getPost('combustivel'),
+            'descricao'       => $this->request->getPost('descricao'),
+            'versao'          => $this->request->getPost('versao'),
+            'estado'          => $this->request->getPost('estado'),
+            'ndeportas'       => $this->request->getPost('ndeportas'),
+            'lotacao'         => $this->request->getPost('lotacao'),
+            'ndemudancas'     => $this->request->getPost('ndemudancas'),
+            'tipodecaixaa'    => $this->request->getPost('tipodecaixaa'),
+            'tracao'          => $this->request->getPost('tracao'),
+            '2chave'          => $this->request->getPost('2chave'),
+            'segmento'        => $this->request->getPost('segmento'),
+            'potencia'        => $this->request->getPost('potencia'),
+            'cilindrada'      => $this->request->getPost('cilindrada'),
+        ]); 
 
         return redirect()->to('/dashboard');
     }
@@ -145,18 +157,41 @@ class Cars_Dashboard extends BaseController
                 unlink($imagemAntiga);
             }
         }
+        
+        $estadoAnterior = $carro['estado'];
+        $novoEstado = $this->request->getPost('estado');
+        
+         $dados = [
+            'marca'           => $this->request->getPost('marca'),
+            'modelo'          => $this->request->getPost('modelo'),
+            'ano'             => $this->request->getPost('ano'),
+            'cor'             => $this->request->getPost('cor'),
+            'preco'           => $this->request->getPost('preco'),
+            'preco_desconto'  => $this->request->getPost('preco_desconto'),
+            'imagem_url'      => $nomeImagem,
+            'quilometragem'   => $this->request->getPost('quilometragem'),
+            'combustivel'     => $this->request->getPost('combustivel'),
+            'descricao'       => $this->request->getPost('descricao'),
+            'versao'          => $this->request->getPost('versao'),
+            'estado'          => $novoEstado,
+            'ndeportas'       => $this->request->getPost('ndeportas'),
+            'lotacao'         => $this->request->getPost('lotacao'),
+            'ndemudancas'     => $this->request->getPost('ndemudancas'),
+            'tipodecaixaa'    => $this->request->getPost('tipodecaixaa'),
+            'tracao'          => $this->request->getPost('tracao'),
+            '2chave'          => $this->request->getPost('2chave'),
+            'segmento'        => $this->request->getPost('segmento'),
+            'potencia'        => $this->request->getPost('potencia'),
+            'cilindrada'      => $this->request->getPost('cilindrada'),
+        ];
 
-        $this->carroModel->update($id, [
-            'marca'          => $this->request->getPost('marca'),
-            'modelo'         => $this->request->getPost('modelo'),
-            'ano'            => $this->request->getPost('ano'),
-            'preco'         => $this->request->getPost('preco'),
-            'preco_desconto' => $this->request->getPost('preco_desconto'),
-            'imagem_url'     => $nomeImagem,
-            'quilometragem' => $this->request->getPost('quilometragem'),
-            'combustivel'    => $this->request->getPost('combustivel'),
-            'estado'         => $this->request->getPost('estado'),
-        ]);
+    
+     //  Atualiza a data de venda se o estado mudou para "vendido"
+    if ($estadoAnterior !== 'vendido' && $novoEstado === 'vendido') {
+        $dados['data_venda'] = date('Y-m-d'); 
+    }
+
+    $this->carroModel->update($id, $dados);
 
         return redirect()->to('/dashboard')->with('success', 'Veículo atualizado com sucesso!');
     }

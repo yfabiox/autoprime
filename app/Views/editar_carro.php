@@ -9,40 +9,43 @@
                 <p class="text-gray-400 mt-1">Atualize os detalhes do veículo</p>
             </div>
         </div>
-        <a href="<?= url_to('Cars_Dashboard') ?>"
-            class="inline-flex items-center justify-center px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white font-medium rounded-lg shadow transition-all">
-            <iconify-icon icon="lucide:arrow-left" class="mr-2"></iconify-icon>
-            Voltar
-        </a>
     </div>
 
     <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-700 p-6">
         <form action="<?= base_url('dashboard/update/' . $carro['id']) ?>" method="post" enctype="multipart/form-data">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
                 <!-- Coluna 1 -->
                 <div class="space-y-6">
                     <div>
                         <label for="marca" class="block text-sm font-medium text-gray-300 mb-1">Marca</label>
                         <input type="text" id="marca" name="marca" value="<?= esc($carro['marca']) ?>"
-                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
                     </div>
 
                     <div>
                         <label for="modelo" class="block text-sm font-medium text-gray-300 mb-1">Modelo</label>
                         <input type="text" id="modelo" name="modelo" value="<?= esc($carro['modelo']) ?>"
-                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
                     </div>
 
                     <div>
                         <label for="ano" class="block text-sm font-medium text-gray-300 mb-1">Ano</label>
                         <input type="number" id="ano" name="ano" value="<?= esc($carro['ano']) ?>"
-                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+                    </div>
+
+                    <div>
+                        <label for="cor" class="block text-sm font-medium text-gray-300 mb-1">Cor</label>
+                        <input type="text" id="cor" name="cor" value="<?= esc($carro['cor']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
                     </div>
 
                     <div>
                         <label for="preco" class="block text-sm font-medium text-gray-300 mb-1">Preço (€)</label>
                         <input type="number" id="preco" name="preco" value="<?= esc($carro['preco']) ?>"
-                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required
+                            step="0.01">
                     </div>
 
                     <div>
@@ -50,32 +53,25 @@
                             Promocional (€)</label>
                         <input type="number" id="preco_desconto" name="preco_desconto"
                             value="<?= esc($carro['preco_desconto']) ?>"
-                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white"
+                            step="0.01">
+                    </div>
+
+                    <div>
+                        <label for="imagem" class="block text-sm font-medium text-gray-300 mb-1">Imagem</label>
+                        <input type="file" id="imagem" name="imagem"
+                            class="block w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-gray-700 file:text-white hover:file:bg-gray-600">
                     </div>
                 </div>
 
                 <!-- Coluna 2 -->
                 <div class="space-y-6">
                     <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Imagem Atual</label>
-                        <div class="mt-1">
-                            <img src="<?= base_url('uploads/carros/' . $carro['imagem_url']) ?>" alt="Imagem atual"
-                                class="h-40 rounded-lg object-cover border border-gray-600">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="imagem" class="block text-sm font-medium text-gray-300 mb-1">Alterar Imagem</label>
-                        <input type="file" id="imagem" name="imagem"
-                            class="block w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-gray-700 file:text-white hover:file:bg-gray-600">
-                    </div>
-
-                    <div>
                         <label for="quilometragem"
                             class="block text-sm font-medium text-gray-300 mb-1">Quilometragem</label>
                         <input type="number" id="quilometragem" name="quilometragem"
                             value="<?= esc($carro['quilometragem']) ?>"
-                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
                     </div>
 
                     <div>
@@ -84,13 +80,25 @@
                         <select id="combustivel" name="combustivel"
                             class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
                             <?php
-                                $combustiveis = ['Gasolina', 'Diesel', 'Elétrico', 'Híbrido'];
-                                foreach ($combustiveis as $tipo) {
-                                    $selected = $carro['combustivel'] === $tipo ? 'selected' : '';
-                                    echo "<option value='$tipo' $selected>$tipo</option>";
-                                }
-                            ?>
+              $combustiveis = ['Gasolina', 'Diesel', 'Elétrico', 'Híbrido'];
+              foreach ($combustiveis as $tipo) {
+                  $selected = $carro['combustivel'] === $tipo ? 'selected' : '';
+                  echo "<option value='$tipo' $selected>$tipo</option>";
+              }
+              ?>
                         </select>
+                    </div>
+
+                    <div>
+                        <label for="descricao" class="block text-sm font-medium text-gray-300 mb-1">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="4"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white"><?= esc($carro['descricao']) ?></textarea>
+                    </div>
+
+                    <div>
+                        <label for="versao" class="block text-sm font-medium text-gray-300 mb-1">Versão</label>
+                        <input type="text" id="versao" name="versao" value="<?= esc($carro['versao']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
                     </div>
 
                     <div>
@@ -98,15 +106,102 @@
                         <select id="estado" name="estado"
                             class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
                             <?php
-                                $estados = ['disponivel' => 'Disponível', 'reservado' => 'Reservado', 'vendido' => 'Vendido'];
-                                foreach ($estados as $valor => $texto) {
-                                    $selected = $carro['estado'] === $valor ? 'selected' : '';
-                                    echo "<option value='$valor' $selected>$texto</option>";
-                                }
-                            ?>
+              $estados = ['disponivel' => 'Disponível', 'reservado' => 'Reservado', 'vendido' => 'Vendido'];
+              foreach ($estados as $valor => $texto) {
+                  $selected = $carro['estado'] === $valor ? 'selected' : '';
+                  echo "<option value='$valor' $selected>$texto</option>";
+              }
+              ?>
                         </select>
                     </div>
+
+                    <div>
+                        <label for="ndeportas" class="block text-sm font-medium text-gray-300 mb-1">Número de
+                            Portas</label>
+                        <input type="number" id="ndeportas" name="ndeportas" value="<?= esc($carro['ndeportas']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                    </div>
+
+                    <div>
+                        <label for="lotacao" class="block text-sm font-medium text-gray-300 mb-1">Lotação</label>
+                        <input type="number" id="lotacao" name="lotacao" value="<?= esc($carro['lotacao']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                    </div>
                 </div>
+
+                <!-- Coluna 3 -->
+                <div class="space-y-6">
+                    <div>
+                        <label for="ndemudancas" class="block text-sm font-medium text-gray-300 mb-1">Número de
+                            Mudanças</label>
+                        <input type="number" id="ndemudancas" name="ndemudancas"
+                            value="<?= esc($carro['ndemudancas']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                    </div>
+
+                    <div>
+                        <label for="tipodecaixaa" class="block text-sm font-medium text-gray-300 mb-1">Tipo de
+                            Caixa</label>
+                        <select id="tipodecaixaa" name="tipodecaixaa"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+                            <?php
+              $tiposCaixa = ['Manual', 'Automática', 'Semi-automática'];
+              foreach ($tiposCaixa as $tipo) {
+                  $selected = $carro['tipodecaixaa'] === $tipo ? 'selected' : '';
+                  echo "<option value='$tipo' $selected>$tipo</option>";
+              }
+              ?>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="tracao" class="block text-sm font-medium text-gray-300 mb-1">Tração</label>
+                        <select id="tracao" name="tracao"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+                            <?php
+              $tracoes = ['Dianteira', 'Traseira', 'Integral', '4x4'];
+              foreach ($tracoes as $tipo) {
+                  $selected = $carro['tracao'] === $tipo ? 'selected' : '';
+                  echo "<option value='$tipo' $selected>$tipo</option>";
+              }
+              ?>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="2chave" class="block text-sm font-medium text-gray-300 mb-1">2ª Chave</label>
+                        <select id="2chave" name="2chave"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                            <?php
+              $chaveOptions = ['Sim', 'Não'];
+              foreach ($chaveOptions as $option) {
+                  $selected = $carro['2chave'] === $option ? 'selected' : '';
+                  echo "<option value='$option' $selected>$option</option>";
+              }
+              ?>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="segmento" class="block text-sm font-medium text-gray-300 mb-1">Segmento</label>
+                        <input type="text" id="segmento" name="segmento" value="<?= esc($carro['segmento']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                    </div>
+
+                    <div>
+                        <label for="potencia" class="block text-sm font-medium text-gray-300 mb-1">Potência (cv)</label>
+                        <input type="number" id="potencia" name="potencia" value="<?= esc($carro['potencia']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                    </div>
+
+                    <div>
+                        <label for="cilindrada" class="block text-sm font-medium text-gray-300 mb-1">Cilindrada
+                            (cc)</label>
+                        <input type="number" id="cilindrada" name="cilindrada" value="<?= esc($carro['cilindrada']) ?>"
+                            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white">
+                    </div>
+                </div>
+
             </div>
 
             <div class="mt-8 flex flex-col sm:flex-row justify-end gap-3">

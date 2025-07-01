@@ -1,4 +1,4 @@
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         <!-- Total de carros -->
         <div
@@ -68,3 +68,33 @@
             <p class="text-sm text-neutral-400 mt-2">Preferência dos clientes</p>
         </div>
     </div>
+
+    <!-- GRÁFICOS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <!-- Gráfico de Vendas por Mês -->
+        <div
+            class="bg-neutral-900 border border-neutral-700 text-white rounded-xl shadow-lg p-6 transition-shadow hover:shadow-xl hover:border-red-400/30 group h-[400px]">
+            <h2 class="text-xl font-semibold mb-4 group-hover:text-red-400 transition-colors">Vendas por Mês</h2>
+            <canvas id="vendasChart" class="w-full h-full"></canvas>
+        </div>
+
+        <!-- Gráfico de Anúncios por Mês -->
+        <div
+            class="bg-neutral-900 border border-neutral-700 text-white rounded-xl shadow-lg p-6 transition-shadow hover:shadow-xl hover:border-red-400/30 group h-[400px]">
+            <h2 class="text-xl font-semibold mb-4 group-hover:text-red-400 transition-colors">Carros Anunciados por Mês
+            </h2>
+            <canvas id="anunciosChart" class="w-full h-full"></canvas>
+        </div>
+    </div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+const meses = JSON.parse('<?= $meses ?>');
+const vendas = JSON.parse('<?= $vendas ?>');
+const anuncios = JSON.parse('<?= $anuncios ?>');
+</script>
+
+<script src="<?= base_url('js/charts.js'); ?>"></script>
