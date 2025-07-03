@@ -5,17 +5,20 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\LoginModel;
 use App\Models\CarroModel;
+use App\Models\LogModel;  // <-- Importa o LogModel
 
 class AdminDashboard extends BaseController
 {
     protected $loginModel;
     protected $carroModel;
+    protected $logModel;    // <-- Propriedade para o LogModel
     protected $session;
 
     public function __construct()
     {
         $this->loginModel = new LoginModel();
         $this->carroModel = new CarroModel();
+        $this->logModel = new LogModel();  // <-- Instancia o LogModel
         $this->session = session();
     }
 
@@ -27,13 +30,12 @@ class AdminDashboard extends BaseController
         // Total de carros cadastrados
         $data['totalCarros'] = $this->carroModel->countAll();
 
-        // Carros em promoção (supondo que o campo se chama 'sale' e é booleano)
-       $data['carrosEmPromocao'] = $this->carroModel
-        ->where('preco_desconto >', 0)
-        ->countAllResults();
+        // Carros em promoção (supondo que o campo se chama 'preco_desconto')
+        $data['carrosEmPromocao'] = $this->carroModel
+            ->where('preco_desconto >', 0)
+            ->countAllResults();
 
-
-        // Carros vendidos ou reservados (campo 'status' com valor 'vendido' ou 'reservado')
+        // Carros vendidos ou reservados (campo 'estado')
         $data['vendidosOuReservados'] = $this->carroModel
             ->groupStart()
                 ->where('estado', 'vendido')
@@ -51,7 +53,7 @@ class AdminDashboard extends BaseController
 
         $data['marcaMaisInserida'] = $maisInserida['marca'] ?? 'N/A';
 
-                // Gráfico: vendas por mês (status = 'vendido', agrupado por mês)
+        // Gráfico: vendas por mês
         $vendasPorMes = $this->carroModel
             ->select("DATE_FORMAT(data_venda, '%Y-%m') as mes, COUNT(*) as total")
             ->where('estado', 'vendido')
@@ -60,7 +62,7 @@ class AdminDashboard extends BaseController
             ->orderBy('mes')
             ->findAll();
 
-        // Gráfico: anúncios por mês (data_cadastro)
+        // Gráfico: anúncios por mês
         $anunciosPorMes = $this->carroModel
             ->select("DATE_FORMAT(data_cadastro, '%Y-%m') as mes, COUNT(*) as total")
             ->where('YEAR(data_cadastro)', date('Y'))
@@ -68,7 +70,7 @@ class AdminDashboard extends BaseController
             ->orderBy('mes')
             ->findAll();
 
-        // Criar arrays de meses do ano atual
+        // Arrays de meses, vendas e anúncios
         $meses = [];
         $vendas = [];
         $anuncios = [];
@@ -92,11 +94,15 @@ class AdminDashboard extends BaseController
             }
         }
 
-        $data['meses'] = json_encode(array_values($meses));      // ex: ["Jan", "Feb", ...]
-        $data['vendas'] = json_encode(array_values($vendas));    // ex: [3, 5, 2, ...]
-        $data['anuncios'] = json_encode(array_values($anuncios)); // ex: [10, 4, 7, ...]
-
-
+        $data['meses'] = json_encode(array_values($meses));
+        $data['vendas'] = json_encode(array_values($vendas));
+        $data['anuncios'] = json_encode(array_values($anuncios));
+        
+        // --- Aqui: obtém as 5 últimas logs ---
+        $data['logs'] = $this->logModel
+            ->orderBy('created_at', 'DESC')
+            ->limit(5)
+            ->findAll();
 
         return view('header') .
             view('navbar_admin', $data) .

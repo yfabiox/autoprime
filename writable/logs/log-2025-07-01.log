@@ -430,3 +430,113 @@ INFO - 2025-07-01 23:12:08 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-07-01 23:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-07-01 23:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-07-01 23:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-01 23:13:06 --> mysqli_sql_exception: Column 'estado' cannot be null in C:\xampp\htdocs\autoprime\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\autoprime\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\xampp\htdocs\autoprime\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\xampp\htdocs\autoprime\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\xampp\htdocs\autoprime\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\autoprime\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\autoprime\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\autoprime\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\autoprime\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\autoprime\app\Controllers\Cars_Dashboard.php(80): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\autoprime\system\CodeIgniter.php(933): App\Controllers\Cars_Dashboard->store()
+#10 C:\xampp\htdocs\autoprime\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars_Dashboard))
+#11 C:\xampp\htdocs\autoprime\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\autoprime\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\autoprime\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\autoprime\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-07-01 23:13:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'estado' cannot be null
+[Method: POST, Route: dashboard/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (:marca:, :modelo:, :ano:, :cor:, :preco:, :preco_desconto:, :imagem_url:, :quilometragem:, :combustivel:, :descricao:, :versao:, :estado:, :ndeportas:, :lotacao:, :ndemudancas:, :tipodecaixaa:, :tracao:, :2chave:, :segmento:, :potencia:, :cilindrada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Cars_Dashboard.php(80): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars_Dashboard->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars_Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 23:13:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'estado' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (\'Bmw\', \'fdf\', \'\', \'\', \'\', \'\', NULL, \'\', NULL, \'\', \'\', NULL, \'\', \'\', \'\', NULL, NULL, NULL, \'\', \'2323\', \'3434\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (\'Bmw\', \'fdf\', \'\', \'\', \'\', \'\', NULL, \'\', NULL, \'\', \'\', NULL, \'\', \'\', \'\', NULL, NULL, NULL, \'\', \'2323\', \'3434\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (:marca:, :modelo:, :ano:, :cor:, :preco:, :preco_desconto:, :imagem_url:, :quilometragem:, :combustivel:, :descricao:, :versao:, :estado:, :ndeportas:, :lotacao:, :ndemudancas:, :tipodecaixaa:, :tracao:, :2chave:, :segmento:, :potencia:, :cilindrada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Cars_Dashboard.php(80): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars_Dashboard->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars_Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 23:13:06 --> [Caused by] mysqli_sql_exception: Column 'estado' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (\'Bmw\', \'fdf\', \'\', \'\', \'\', \'\', NULL, \'\', NULL, \'\', \'\', NULL, \'\', \'\', \'\', NULL, NULL, NULL, \'\', \'2323\', \'3434\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (\'Bmw\', \'fdf\', \'\', \'\', \'\', \'\', NULL, \'\', NULL, \'\', \'\', NULL, \'\', \'\', \'\', NULL, NULL, NULL, \'\', \'2323\', \'3434\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (\'Bmw\', \'fdf\', \'\', \'\', \'\', \'\', NULL, \'\', NULL, \'\', \'\', NULL, \'\', \'\', \'\', NULL, NULL, NULL, \'\', \'2323\', \'3434\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `carros` (`marca`, `modelo`, `ano`, `cor`, `preco`, `preco_desconto`, `imagem_url`, `quilometragem`, `combustivel`, `descricao`, `versao`, `estado`, `ndeportas`, `lotacao`, `ndemudancas`, `tipodecaixaa`, `tracao`, `2chave`, `segmento`, `potencia`, `cilindrada`) VALUES (:marca:, :modelo:, :ano:, :cor:, :preco:, :preco_desconto:, :imagem_url:, :quilometragem:, :combustivel:, :descricao:, :versao:, :estado:, :ndeportas:, :lotacao:, :ndemudancas:, :tipodecaixaa:, :tracao:, :2chave:, :segmento:, :potencia:, :cilindrada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Cars_Dashboard.php(80): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cars_Dashboard->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cars_Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-01 23:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 23:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -52,6 +52,8 @@ class Cars_Dashboard extends BaseController
     
     public function store()
     {
+        $user = session()->get('user');
+        $data['user_name'] = $user['user_name'] ?? 'Utilizador';
         $file = $this->request->getFile('imagem');
         $nomeImagem = null; // Valor padrão caso não envie imagem
 
@@ -100,8 +102,16 @@ class Cars_Dashboard extends BaseController
             'potencia'        => $this->request->getPost('potencia'),
             'cilindrada'      => $this->request->getPost('cilindrada'),
         ]); 
+        
+       $this->logAction(
+            'Criou Veículo',
+            "Veículo " . $this->request->getPost('marca') . " " . $this->request->getPost('modelo') . " criado com sucesso.",
+            $user['user_id'],
+            $user['user_name']
+        );
 
         return redirect()->to('/dashboard');
+        
     }
     
     public function edit($id)
@@ -120,6 +130,8 @@ class Cars_Dashboard extends BaseController
         
     public function update($id)
     {
+        $user = $this->session->get('user');
+        $data['user_name'] = $user['user_name'] ?? 'Utilizador';
         $carro = $this->carroModel->find($id);
 
         if (!$carro) {
@@ -184,7 +196,12 @@ class Cars_Dashboard extends BaseController
             'potencia'        => $this->request->getPost('potencia'),
             'cilindrada'      => $this->request->getPost('cilindrada'),
         ];
-
+        $this->logAction(
+            'Editou Veículo',
+            "Veículo " . $this->request->getPost('marca') . " " . $this->request->getPost('modelo') . " editado com sucesso.",
+            $user['user_id'],
+            $user['user_name']
+        );
     
      //  Atualiza a data de venda se o estado mudou para "vendido"
     if ($estadoAnterior !== 'vendido' && $novoEstado === 'vendido') {
@@ -198,7 +215,17 @@ class Cars_Dashboard extends BaseController
 
     public function delete($id)
     {
+        $user = $this->session->get('user');
+        $data['user_name'] = $user['user_name'] ?? 'Utilizador';
+        $carro = $this->carroModel->find($id);
         $this->carroModel->delete($id);
+        
+        $this->logAction(
+            'Excluiu Veículo',
+            "Veículo " . $carro['marca'] . " " . $carro['modelo'] . " excluído com sucesso.",
+            $user['user_id'],
+            $user['user_name']
+        );
         return redirect()->to('/dashboard');
     }
 }

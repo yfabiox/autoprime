@@ -1,5 +1,5 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         <!-- Total de carros -->
         <div
             class="bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-700 text-white rounded-xl shadow-lg p-6 transition-all hover:scale-[1.02] hover:shadow-xl hover:border-red-400/30 group">
@@ -86,6 +86,31 @@
             <canvas id="anunciosChart" class="w-full h-full"></canvas>
         </div>
     </div>
+    <div class="bg-neutral-900 border border-neutral-700 text-white rounded-xl shadow-lg p-6 mt-8">
+        <h2 class="text-xl font-semibold mb-4 text-red-400">Logs Recentes</h2>
+
+        <?php if (!empty($logs)): ?>
+        <ul class="space-y-4">
+            <?php foreach ($logs as $log): ?>
+            <li class="border-b border-neutral-700 pb-3">
+                <p><strong><?= esc($log['action'] ?? '[Sem ação]') ?></strong></p>
+                <p class="text-sm text-neutral-400"><?= esc($log['description'] ?? '[Sem descrição]') ?></p>
+                <p class="text-xs text-neutral-500">
+                    <?= isset($log['created_at']) ? date('d/m/Y H:i', strtotime($log['created_at'])) : '[Sem data]' ?>
+                    <?php if (!empty($log['user_name'])): ?>
+                    — <span class="text-emerald-400">por <?= esc($log['user_name']) ?></span>
+                    <?php endif; ?>
+                </p>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+        <?php else: ?>
+        <p class="text-neutral-500">Nenhum log disponível.</p>
+        <?php endif; ?>
+    </div>
+
+
+
 
 
 </div>

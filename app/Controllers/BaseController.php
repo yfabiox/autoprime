@@ -55,4 +55,19 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+
+    function logAction($action, $description = null, $userId = null, $userName = null) {
+    $logModel = new \App\Models\LogModel();
+
+    $data = [
+        'user_id'     => $userId,
+        'user_name'   => $userName,
+        'action'      => $action,
+        'description' => $description,
+        'ip_address'  => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+    ];
+
+    $logModel->insert($data);
+}
+
 }

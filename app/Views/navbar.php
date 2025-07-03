@@ -5,7 +5,7 @@
  ?>
 
 <nav class="bg-neutral-900 bg-opacity-70 backdrop-blur-sm fixed w-full z-50 py-4 shadow-xl rounded-b-3xl">
-    <div class="container mx-auto px-8 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div class="flex items-center">
             <a href="<?= url_to('Home') ?>"
                 class="text-4xl font-extrabold text-white tracking-wider hover:text-red-500 duration-500 transform hover:scale-110">
