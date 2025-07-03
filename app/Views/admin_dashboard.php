@@ -87,32 +87,53 @@
         </div>
     </div>
     <div class="bg-neutral-900 border border-neutral-700 text-white rounded-xl shadow-lg p-6 mt-8">
-        <h2 class="text-xl font-semibold mb-4 text-red-400">Logs Recentes</h2>
+        <h2 class="text-xl font-semibold mb-5 text-red-400 flex items-center gap-2">
+            <i data-lucide="history" class="w-5 h-5 text-red-400"></i>
+            Logs Recentes
+        </h2>
 
         <?php if (!empty($logs)): ?>
-        <ul class="space-y-4">
+        <ul class="space-y-5">
             <?php foreach ($logs as $log): ?>
-            <li class="border-b border-neutral-700 pb-3">
-                <p><strong><?= esc($log['action'] ?? '[Sem ação]') ?></strong></p>
+            <?php
+                $action = strtolower($log['action'] ?? '');
+                $borderColor = 'border-blue-500';
+                $textColor = 'text-blue-400';
+                $iconName = 'info'; // fallback ícone
+
+                if (str_contains($action, 'criou') || str_contains($action, 'criado')) {
+                    $borderColor = 'border-emerald-500';
+                    $textColor = 'text-emerald-400';
+                    $iconName = 'plus-circle';
+                } elseif (str_contains($action, 'excluiu') || str_contains($action, 'apagou')) {
+                    $borderColor = 'border-red-500';
+                    $textColor = 'text-red-400';
+                    $iconName = 'trash-2';
+                } elseif (str_contains($action, 'editou') || str_contains($action, 'atualizou')) {
+                    $borderColor = 'border-yellow-500';
+                    $textColor = 'text-yellow-400';
+                    $iconName = 'pencil';
+                }
+            ?>
+            <li class="group border-l-4 <?= $borderColor ?> pl-4 bg-neutral-800 rounded-md shadow-inner">
+                <div class="flex items-center gap-2 mb-1">
+                    <i data-lucide="<?= $iconName ?>" class="w-4 h-4 <?= $textColor ?>"></i>
+                    <p class="text-base font-bold"><?= esc($log['action'] ?? '[Sem ação]') ?></p>
+                </div>
                 <p class="text-sm text-neutral-400"><?= esc($log['description'] ?? '[Sem descrição]') ?></p>
-                <p class="text-xs text-neutral-500">
+                <p class="text-xs text-neutral-500 mt-1">
                     <?= isset($log['created_at']) ? date('d/m/Y H:i', strtotime($log['created_at'])) : '[Sem data]' ?>
                     <?php if (!empty($log['user_name'])): ?>
-                    — <span class="text-emerald-400">por <?= esc($log['user_name']) ?></span>
+                    — <span class="<?= $textColor ?> font-medium"><?= esc($log['user_name']) ?></span>
                     <?php endif; ?>
                 </p>
             </li>
             <?php endforeach; ?>
         </ul>
         <?php else: ?>
-        <p class="text-neutral-500">Nenhum log disponível.</p>
+        <p class="text-neutral-500 italic">Nenhum log disponível.</p>
         <?php endif; ?>
     </div>
-
-
-
-
-
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -123,3 +144,11 @@ const anuncios = JSON.parse('<?= $anuncios ?>');
 </script>
 
 <script src="<?= base_url('js/charts.js'); ?>"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+});
+</script>
