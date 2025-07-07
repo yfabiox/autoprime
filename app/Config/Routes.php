@@ -29,6 +29,12 @@ $routes->get('/noaccess', 'Login::logout');
 
 $routes->get('dashboard_admin', 'AdminDashboard::index');
 
+$routes->get('testdrive/agendar/(:num)', 'TestDrive::agendar/$1');
+$routes->post('testdrive/enviar', 'TestDrive::enviar');
+$routes->get('agendar-test-drive/(:num)', 'TestDrive::agendar/$1');
+
+$routes->get('/admin/test-drives', 'TestDrive::adminIndex', ['as' => 'admin_test_drives']);
+
 
 
 //CRUD

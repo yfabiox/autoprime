@@ -45,12 +45,14 @@
                     class="absolute left-0 bottom-0 w-full h-0.5 bg-red-400 opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
             </a>
 
-            <a href="#"
+            <a href="<?= url_to('admin_test_drives') ?>"
                 class="text-gray-300 hover:text-red-400 transition-colors duration-300 font-medium relative group">
-                Vendas
-                <span
-                    class="absolute left-0 bottom-0 w-full h-0.5 bg-red-400 opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
+                Test Drive
+                <span class="absolute left-0 bottom-0 w-full h-0.5 bg-red-400 transition-all duration-300
+        <?= ($uri->getSegment(2) === 'test-drives') ? 'opacity-100' : 'opacity-0 group-hover:opacity-100' ?>">
+                </span>
             </a>
+
 
             <a href="<?= url_to('AdminDashboard') ?>"
                 class="text-gray-300 hover:text-red-400 transition-colors duration-300 font-medium relative group">

@@ -18,10 +18,14 @@
 </div>
 
 <!-- Exibição dos carros -->
-<div id="carros-container" class="max-w-7xl mx-auto mt-4"></div>
+<!-- Exibição dos carros -->
+<div class="max-w-7xl mx-auto px-4">
+    <div id="carros-container" class="space-y-8 mt-4"></div>
+</div>
+
 
 <!-- Navegação entre páginas -->
-<div class="flex justify-center items-center space-x-4 mt-6">
+<div class="max-w-7xl mx-auto px-4 mt-6 flex justify-center items-center space-x-4">
     <button id="prevPage"
         class="bg-red-600 text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition flex items-center">
         <iconify-icon icon="lucide:chevron-left" class="mr-1"></iconify-icon>
@@ -34,6 +38,7 @@
         <iconify-icon icon="lucide:chevron-right" class="ml-1"></iconify-icon>
     </button>
 </div>
+
 
 <script>
 const carros = <?= json_encode($carros); ?>;

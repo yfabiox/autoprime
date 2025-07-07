@@ -1,9 +1,11 @@
 <!-- Container principal adicionado (única modificação) -->
 <div class="max-w-screen-2xl mx-auto ">
 
-    <div class="flex flex-col lg:flex-row lg:ml-[70px] lg:mr-28">
+    <div class="flex flex-col lg:flex-row items-start gap-10 px-6 lg:px-28">
+
         <!-- alterado de lg:ml-28 para lg:ml-24 -->
         <div class="relative w-full max-w-3xl mx-auto overflow-hidden">
+
             <!-- Slides -->
             <div id="carousel-slides" class="flex transition-transform duration-500 ease-out">
                 <?php foreach ($imagens as $index => $imagem): ?>
@@ -34,7 +36,7 @@
 
         <!-- Detalhes do Carro -->
         <div class="lg:ml-30 lg:mr-30 lg:w-1/3 lg:mt-0">
-            <div class="p-6 rounded-lg bg-neutral-900 mr-20">
+            <div class="p-6 rounded-lg bg-neutral-900">
                 <h1 class="text-start text-3xl font-semibold text-gray-300"><?= esc($carro['marca']) ?>
                     <?= esc($carro['modelo']) ?></h1>
                 <!-- Preço -->
@@ -61,9 +63,10 @@
                             AutoPrime</span>
                     </div>
                     <div class="mt-6 flex flex-col gap-2">
-                        <a href="tel:+351934468028"
-                            class="flex items-center justify-center gap-2 text-white bg-red-700 hover:bg-red-600 rounded-md py-3 text-xl">
-                            <i class="fas fa-phone"></i> Contactar
+                        <a href="<?= base_url('agendar-test-drive/' . $carro['id']); ?>"
+                            class="flex items-center justify-center gap-2 text-white bg-red-700 hover:bg-red-600 rounded-md py-3 text-xl"
+                            title="Agendar um test drive para este carro">
+                            <i class="fas fa-calendar-check"></i> Agendar Test Drive
                         </a>
 
                         <a href="https://wa.me/351934468028?text=Olá,%20estou%20interessado%20no%20<?= urlencode($carro['marca'] . ' ' . $carro['modelo']) ?>"
