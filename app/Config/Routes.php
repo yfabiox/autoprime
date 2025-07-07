@@ -34,6 +34,8 @@ $routes->post('testdrive/enviar', 'TestDrive::enviar');
 $routes->get('agendar-test-drive/(:num)', 'TestDrive::agendar/$1');
 
 $routes->get('/admin/test-drives', 'TestDrive::adminIndex', ['as' => 'admin_test_drives']);
+$routes->post('admin/testdrives/status/(:num)', 'TestDrive::atualizarStatus/$1');
+$routes->post('admin/testdrives/status', 'TestDrive::atualizarStatus');
 
 
 

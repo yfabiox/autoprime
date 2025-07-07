@@ -99,5 +99,61 @@ public function adminIndex()
             view('navbar_admin', $data) .
             view('test_drives', ['testDrives' => $testDrives]);
 }
+public function atualizarStatus()
+{
+    $id = $this->request->getPost('id');
+    $novoStatus = $this->request->getPost('status');
+
+    if (!in_array($novoStatus, ['pendente', 'aprovado', 'cancelado'])) {
+        return redirect()->back()->with('error', 'Status inválido.');
+    }
+
+    if (!$id) {
+        return redirect()->back()->with('error', 'ID do test drive inválido.');
+    }
+
+    
+    $testDrive = $this->testDriveModel->find($id);
+
+    if (!$testDrive) {
+        return redirect()->back()->with('error', 'Test drive não encontrado.');
+    }
+
+    $this->testDriveModel->update($id, ['status' => $novoStatus]);
+
+    // Se for aprovado, envia email
+    if ($novoStatus === 'aprovado') {
+        $email = \Config\Services::email();
+
+        $email->setTo($testDrive['email_cliente']);
+        $email->setSubject('Confirmação de Test Drive');
+        $carro = $this->carroModel->find($testDrive['carro_id']);
+        $modelo = $carro['marca'] . ' ' . $carro['modelo'];
+
+
+        $mensagem = "
+            <p>Olá <strong>{$testDrive['nome_cliente']}</strong>,</p>
+            <p>O seu test drive ao veículo <strong>{$modelo}</strong> foi <strong>aprovado</strong>!</p>
+            <p>Data agendada: <strong>{$testDrive['data_agendada']}</strong></p>
+            <p>Entraremos em contacto para mais detalhes.</p>
+            <p>Obrigado,</p>
+            <p><em>Autoprime</em></p>
+        ";
+
+
+        $email->setMessage($mensagem);
+
+        if (!$email->send()) {
+            // Log do erro (opcional)
+            log_message('error', $email->printDebugger(['headers', 'subject', 'body']));
+            return redirect()->back()->with('error', 'Status atualizado, mas falha ao enviar o email.');
+        }
+    }
+
+    return redirect()->back()->with('success', 'Status atualizado com sucesso.');
+}
+
+
+
 
 }
