@@ -1,3 +1,17 @@
+<?php if (session()->getFlashdata('login_error')): ?>
+<div class="flex items-center p-4  text-sm text-red-800 rounded-xl bg-red-50 border border-red-300 shadow-sm"
+    role="alert">
+    <svg class="w-5 h-5 text-red-500 me-3 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M12 19a7 7 0 110-14 7 7 0 010 14z" />
+    </svg>
+    <div>
+        <span class="font-medium">Erro ao entrar:</span> <?= esc(session()->getFlashdata('login_error')) ?>
+    </div>
+</div>
+<?php endif; ?>
+
+
 <div
     class="h-screen w-full bg-gradient-to-r from-gray-800 via-gray-900 to-black flex items-center justify-center relative">
     <!-- Botão de Voltar -->
