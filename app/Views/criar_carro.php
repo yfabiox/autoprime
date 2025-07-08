@@ -56,11 +56,30 @@
                             step="0.01" placeholder="Deixe vazio se não houver desconto">
                     </div>
                     <div>
-                        <label for="imagem" class="block text-sm font-medium text-gray-300 mb-1">Imagem</label>
-                        <input type="file" id="imagem" name="imagem"
-                            class="block w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-gray-700 file:text-white hover:file:bg-gray-600"
-                            placeholder="">
+                        <label for="imagem_principal" class="block text-sm font-medium text-gray-300 mb-1">Imagem
+                            Principal</label>
+                        <input type="file" id="imagem_principal" name="imagem_principal" accept="image/*"
+                            class="block w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-gray-700 file:text-white hover:file:bg-gray-600">
                     </div>
+                    <div>
+                        <label for="carro_imagens_input" class="block text-sm font-medium text-gray-300 mb-1">Imagens do
+                            Carrossel</label>
+
+                        <!-- Botão para selecionar imagens -->
+                        <input type="file" id="carro_imagens_input" accept="image/*"
+                            class="block w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-gray-700 file:text-white hover:file:bg-gray-600">
+
+                        <!-- Pré-visualizações -->
+                        <div id="carro_imagens_preview"
+                            class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+
+                        <!-- Input real que envia para o servidor -->
+                        <input type="file" name="carro_imagens[]" id="carro_imagens_hidden" style="display: none;"
+                            multiple>
+                    </div>
+
+
+
                 </div>
 
                 <!-- Coluna 2 -->
@@ -200,6 +219,8 @@
     </div>
 </div>
 
+
+<script src="<?= base_url('js/input_imagens.js'); ?>"></script>
 <script>
 // Função para atualizar a cor do select conforme valor selecionado
 function updateSelectColor(select) {
