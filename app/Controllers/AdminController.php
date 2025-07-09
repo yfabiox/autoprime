@@ -40,30 +40,50 @@ class AdminController extends BaseController
 
     // POST: guardar novo admin
     public function storeAdmin()
-    {
-        $user = $this->session->get('user');
-        $data['user_name'] = $user['user_name'] ?? 'Utilizador';
-        
-        $data = [
-            'user_name' => $this->request->getPost('user_name'),
-            'email'     => $this->request->getPost('email'),
-            'password'  => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-        ];
+{
+    $user = $this->session->get('user');
+    $data['user_name'] = $user['user_name'] ?? 'Utilizador';
 
-        if ($this->loginModel->insert($data)) {
-            return redirect()->to('/admin/utilizadores')->with('success', 'Novo administrador criado com sucesso!');
-        }
+    $novoAdmin = [
+        'user_name' => $this->request->getPost('user_name'),
+        'email'     => $this->request->getPost('email'),
+        'password'  => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+    ];
 
-        return redirect()->back()->with('error', 'Erro ao criar administrador.');
+    $insertId = $this->loginModel->insert($novoAdmin);
+
+    if ($insertId) {
+        $admin = $this->loginModel->find($insertId);
+
+        $this->logAction(
+            'Criou Administrador',
+            "Administrador " . $admin['user_name'] . " criado com sucesso.",
+            $user['user_id'],
+            $user['user_name']
+        );
+
+        return redirect()->to('/admin/utilizadores')->with('success', 'Novo administrador criado com sucesso!');
     }
+
+    return redirect()->back()->with('error', 'Erro ao criar administrador.');
+}
+
     public function eliminarAdmin()
 {
+    $user = $this->session->get('user');
+    $data['user_name'] = $user['user_name'] ?? 'Utilizador';
+    
     $id = $this->request->getPost('id');
-
+    $admin = $this->loginModel->find($id);
     if (!$id) {
         return redirect()->back()->with('error', 'ID inválido.');
     }
-
+    $this->logAction(
+        'Excluiu Administrador',
+        "Administrador " . $admin['user_name'] . " excluído com sucesso.",
+        $user['user_id'],
+        $user['user_name']
+    );
     if ($this->loginModel->delete($id)) {
         return redirect()->to('/admin/utilizadores')->with('success', 'Administrador eliminado com sucesso!');
     }

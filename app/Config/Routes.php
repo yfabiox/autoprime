@@ -36,12 +36,15 @@ $routes->get('agendar-test-drive/(:num)', 'TestDrive::agendar/$1');
 $routes->get('/admin/test-drives', 'TestDrive::adminIndex', ['as' => 'admin_test_drives']);
 $routes->post('admin/testdrives/status/(:num)', 'TestDrive::atualizarStatus/$1');
 $routes->post('admin/testdrives/status', 'TestDrive::atualizarStatus');
-    
+$routes->post('admin/testdrives/delete/(:num)', 'TestDrive::delete/$1');
+
 
 $routes->get('/admin/criar', 'AdminController::criarAdmin');
 $routes->post('/admin/criar', 'AdminController::storeAdmin');
 $routes->get('/admin/utilizadores', 'AdminController::listarAdmins');
 $routes->post('/admin/eliminar', 'AdminController::eliminarAdmin');
+
+$routes->get('contatos', 'Contatos::index');
 
 
 //CRUD

@@ -6,7 +6,7 @@ use App\Models\CarroModel;
 use App\Models\TestDriveModel;
 use CodeIgniter\Controller;
 
-class TestDrive extends Controller
+class TestDrive extends BaseController
 {
     protected $carroModel;
     protected $testDriveModel;
@@ -149,9 +149,45 @@ public function atualizarStatus()
             return redirect()->back()->with('error', 'Status atualizado, mas falha ao enviar o email.');
         }
     }
+    
 
     return redirect()->back()->with('success', 'Status atualizado com sucesso.');
+
+    
 }
+public function delete($id = null)
+{
+    $user = $this->session->get('user');
+    $data['user_name'] = $user['user_name'] ?? 'Utilizador';
+
+    if (!$id || !is_numeric($id)) {
+        return redirect()->back()->with('error', 'ID inválido para exclusão.');
+    }
+
+    // Primeiro busca o testDrive
+    $testDrive = $this->testDriveModel->find($id);
+
+    if (!$testDrive) {
+        return redirect()->back()->with('error', 'Agendamento não encontrado.');
+    }
+
+    // Agora que $testDrive está definido, podes buscar o carro
+    $carro = $this->carroModel->find($testDrive['carro_id']);
+
+    $this->logAction(
+        'Excluiu Test Drive',
+        "Veículo " . $carro['marca'] . " " . $carro['modelo'] . " excluído com sucesso.",
+        $user['user_id'],
+        $user['user_name']
+    );
+
+    if ($this->testDriveModel->delete($id)) {
+        return redirect()->back()->with('success', 'Agendamento excluído com sucesso.');
+    } else {
+        return redirect()->back()->with('error', 'Erro ao excluir agendamento.');
+    }
+}
+
 
 
 

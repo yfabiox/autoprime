@@ -26,6 +26,7 @@
                     <th class="p-4">Data</th>
                     <th class="p-4">Veículo</th>
                     <th class="p-4">Estado</th>
+                    <th class="p-4 text-center">Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,19 +36,17 @@
                     <td class="p-4 text-neutral-300"><?= esc($td['email_cliente']) ?></td>
                     <td class="p-4 text-neutral-300"><?= esc($td['telefone_cliente']) ?></td>
                     <td class="p-4 text-neutral-300"><?= esc(date('d/m/Y H:i', strtotime($td['data_agendada']))) ?></td>
-                    <td class="p-4 text-neutral-300">
-                        <?= esc($td['marca']) ?> <?= esc($td['modelo']) ?>
-                    </td>
+                    <td class="p-4 text-neutral-300"><?= esc($td['marca']) ?> <?= esc($td['modelo']) ?></td>
                     <td class="p-4">
                         <form action="<?= base_url('admin/testdrives/status') ?>" method="post">
                             <input type="hidden" name="id" value="<?= esc($td['id']) ?>">
                             <select name="status" onchange="this.form.submit()" class="bg-neutral-800 text-xs border rounded-full px-3 py-1 font-semibold
-                        <?= match(strtolower($td['status'])) {
-                            'pendente'   => 'border-yellow-600 text-yellow-300 bg-yellow-900',
-                            'aprovado' => 'border-emerald-600 text-emerald-300 bg-emerald-900',
-                            'cancelado'  => 'border-red-600 text-red-300 bg-red-900',
-                            default      => 'border-neutral-600 text-neutral-300 bg-neutral-800'
-                        } ?>">
+                                <?= match(strtolower($td['status'])) {
+                                    'pendente' => 'border-yellow-600 text-yellow-300 bg-yellow-900',
+                                    'aprovado' => 'border-emerald-600 text-emerald-300 bg-emerald-900',
+                                    'cancelado' => 'border-red-600 text-red-300 bg-red-900',
+                                    default => 'border-neutral-600 text-neutral-300 bg-neutral-800'
+                                } ?>">
                                 <option value="pendente" <?= $td['status'] === 'pendente' ? 'selected' : '' ?>>Pendente
                                 </option>
                                 <option value="aprovado" <?= $td['status'] === 'aprovado' ? 'selected' : '' ?>>Aprovado
@@ -57,7 +56,17 @@
                             </select>
                         </form>
                     </td>
-
+                    <td class="p-4 text-center">
+                        <form action="<?= base_url('admin/testdrives/delete/' . $td['id']) ?>" method="post"
+                            onsubmit="return confirm('Tem a certeza que deseja excluir este agendamento?')">
+                            <?= csrf_field() ?>
+                            <button type="submit"
+                                class="px-3 py-1.5 bg-red-800 hover:bg-red-700 border border-red-600 text-red-200 text-xs rounded-lg flex items-center justify-center gap-1 transition">
+                                <i data-lucide="trash" class="w-4 h-4"></i>
+                                Excluir
+                            </button>
+                        </form>
+                    </td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>

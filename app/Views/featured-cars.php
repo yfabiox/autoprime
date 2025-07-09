@@ -9,7 +9,7 @@
     <div class="max-w-7xl mx-auto">
         <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <!-- Loop para exibir todos os carros -->
-            <?php foreach ($cars as $car): ?>
+            <?php foreach ($featured as $car): ?>
             <a href="<?= url_to('Detalhe_carro::index', $car['id']); ?>"
                 class="bg-neutral-800 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 flex flex-col w-full">
                 <!-- Imagem do carro -->
