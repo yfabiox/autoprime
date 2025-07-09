@@ -77,8 +77,6 @@
                 <div id="dropdownMenu"
                     class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-neutral-900 ring-1 ring-black ring-opacity-5 hidden z-20">
                     <div class="py-1">
-                        <a href=""
-                            class="block px-4 py-2 text-sm text-gray-300 hover:bg-red-500 hover:text-white">Perfil</a>
                         <a href="<?= url_to('logout') ?>"
                             class="block px-4 py-2 text-sm text-gray-300 hover:bg-red-500 hover:text-white">Logout</a>
                     </div>
