@@ -37,12 +37,6 @@
                 <span
                     class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-400 group-hover:w-full transition-all duration-300"></span>
             </a>
-            <a href="#"
-                class="text-gray-300 hover:text-red-400 transition-colors duration-300 font-medium relative group">
-                Sobre
-                <span
-                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-400 group-hover:w-full transition-all duration-300"></span>
-            </a>
             <a href="<?= url_to('contatos') ?>" class="text-gray-300 hover:text-red-400 transition-colors duration-300 font-medium relative group
                 <?= ($uri->getSegment(1) === 'contatos') ? 'border-b-2 border-red-500' : '' ?>">
                 Contato
