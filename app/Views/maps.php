@@ -52,13 +52,7 @@
                     </div>
                 </div>
 
-                <div class="mt-6">
-                    <a href="#"
-                        class="inline-flex items-center justify-center w-full px-4 py-3 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors">
-                        <i class="fa-solid fa-calendar-check mr-2"></i>
-                        Agendar Teste Drive
-                    </a>
-                </div>
+                
             </div>
         </div>
     </div>
