@@ -211,7 +211,7 @@
                 <button type="submit"
                     class="px-6 py-3 rounded-lg bg-red-600 hover:bg-red-700 text-white font-semibold text-sm flex items-center gap-2 shadow">
                     <iconify-icon icon="lucide:save"></iconify-icon>
-                    Salvar Alterações
+                    Guardar Alterações
                 </button>
             </div>
         </form>

@@ -78,9 +78,10 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold text-yellow-400 mb-2">Morada</h3>
-                            <p class="text-gray-300">Rua Exemplo, 123</p>
-                            <p class="text-gray-300">Lisboa, Portugal</p>
-                            <a href="https://maps.google.com" target="_blank"
+                            <p class="text-gray-300">R. dos Aranhas 100, São Martinho, 9000-044 Funchal</p>
+                            <p class="text-gray-300">Madeira, Portugal</p>
+                            <a href="https://www.google.com/maps/place/R.+dos+Aranhas+100,+9000-044+Funchal,+Portugal/@32.649671,-16.909123,17z"
+                                target="_blank"
                                 class="inline-block mt-3 px-4 py-2 bg-yellow-600 hover:bg-yellow-700 rounded-lg text-sm font-medium transition duration-300">
                                 Ver no Mapa
                             </a>
@@ -111,12 +112,13 @@
             </div>
         </div>
     </div>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
     window.addEventListener('DOMContentLoaded', () => {
         lucide.createIcons();
     });
     </script>
+
 </body>
 
 </html>
