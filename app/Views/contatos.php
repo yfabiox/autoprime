@@ -43,7 +43,7 @@
                         <div>
                             <h3 class="text-xl font-semibold text-green-400 mb-2">WhatsApp</h3>
                             <p class="text-gray-300 mb-1">+351 934 468 028</p>
-                            <a href="https://wa.me/351912345678"
+                            <a href="https://wa.me/351934468028" target="_blank"
                                 class="inline-block mt-2 px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg text-sm font-medium transition duration-300">
                                 Enviar Mensagem
                             </a>
